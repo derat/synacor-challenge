@@ -49,7 +49,6 @@ func main() {
 			for _, ch := range ln {
 				vm.in <- byte(ch)
 			}
-			vm.in <- '\n'
 		}
 		vm.halt()
 	}(os.Stdin)
